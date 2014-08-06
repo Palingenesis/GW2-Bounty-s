@@ -26,7 +26,7 @@ function AddBountyDetails() {
     } else {
         inTheMists = false;
     }
-    if (inTheMists = false) {
+    if (inTheMists == false) {
         if (showBountyPoints != undefined) {
             showBountyPoints.splice(0, showBountyPoints.length);
         }
