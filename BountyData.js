@@ -23,7 +23,16 @@ var inTheMists = false;
 function AddBountyDetails() {
     if (CurrentMapName == " Borderlands" || CurrentMapName == "Eternal Battlegrounds" || CurrentMapName == "Edge of the Mists" || CurrentMapName == "Obsidian Sanctum") {
         inTheMists = true;
-    } else {
+            if (showBountyPolyline != undefined) {
+            map.removeLayer(showBountyPolyline);
+            map.removeLayer(showBountyCircle);
+            map.removeLayer(showBountyGroup);
+            if (showBountyPoints != undefined) {
+                showBountyPoints.splice(0, showBountyPoints.length);
+            }
+            PlacedBountyPath = false;
+        }
+} else {
         inTheMists = false;
     }
     if (inTheMists == false) {
