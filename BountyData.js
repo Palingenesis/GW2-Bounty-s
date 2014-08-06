@@ -17,10 +17,16 @@ var tempPath = "";
 var PopupIcon;
 var showBountyPoints = new Array();
 var showBountyGroup = new Array();
+var inTheMists = false;
 
 //Add Bounty paths and sutch
 function AddBountyDetails() {
     if (CurrentMapName != " Borderlands" || CurrentMapName != "Eternal Battlegrounds" || CurrentMapName != "Edge of the Mists" || CurrentMapName != "Obsidian Sanctum") {
+        inTheMists = true;
+    } else {
+        inTheMists = false;
+    }
+    if (inTheMists = false) {
         if (showBountyPoints != undefined) {
             showBountyPoints.splice(0, showBountyPoints.length);
         }
