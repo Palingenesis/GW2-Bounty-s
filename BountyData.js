@@ -21,7 +21,7 @@ var inTheMists = false;
 
 //Add Bounty paths and sutch
 function AddBountyDetails() {
-    if (CurrentMapName != " Borderlands" || CurrentMapName != "Eternal Battlegrounds" || CurrentMapName != "Edge of the Mists" || CurrentMapName != "Obsidian Sanctum") {
+    if (CurrentMapName == " Borderlands" || CurrentMapName == "Eternal Battlegrounds" || CurrentMapName == "Edge of the Mists" || CurrentMapName == "Obsidian Sanctum") {
         inTheMists = true;
     } else {
         inTheMists = false;
